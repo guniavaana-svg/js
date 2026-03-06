@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+.header {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.nav {
+  margin: auto;
+}
+.nav_items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+}
+.nav_items a {
+  font-weight: 600;
+}
+.nav_item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.enter {
+  margin-left: auto;
+}
