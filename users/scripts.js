@@ -13,10 +13,6 @@ async function getUsers() {
   users.forEach((item) => {
     let tr = document.createElement("tr"); //მწკრივის ბლოკი
     tbody.appendChild(tr);
-    let th = document.createElement("th"); //მწკრივის სათაური
-    th.innerHTML = item.id;
-    tr.appendChild(th); //მწკრივი
-
     for (const key in item) {
       let td = document.createElement("td");
       td.innerHTML = item[key];
@@ -31,6 +27,7 @@ async function getUsers() {
     let search = document.querySelector("#search").value;
     console.log(search);
   });
+  /////
 }
 getUsers();
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
